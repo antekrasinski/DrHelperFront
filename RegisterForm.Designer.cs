@@ -38,13 +38,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // register
             // 
-            this.register.Location = new System.Drawing.Point(492, 293);
+            this.register.Location = new System.Drawing.Point(193, 221);
             this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(212, 29);
+            this.register.Size = new System.Drawing.Size(163, 39);
             this.register.TabIndex = 0;
             this.register.Text = "REGISTER";
             this.register.UseVisualStyleBackColor = true;
@@ -52,37 +54,37 @@
             // 
             // textUsername
             // 
-            this.textUsername.Location = new System.Drawing.Point(192, 108);
+            this.textUsername.Location = new System.Drawing.Point(193, 47);
             this.textUsername.Name = "textUsername";
-            this.textUsername.Size = new System.Drawing.Size(230, 27);
+            this.textUsername.Size = new System.Drawing.Size(326, 27);
             this.textUsername.TabIndex = 1;
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(192, 141);
+            this.textPassword.Location = new System.Drawing.Point(193, 80);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(230, 27);
+            this.textPassword.Size = new System.Drawing.Size(326, 27);
             this.textPassword.TabIndex = 1;
             // 
             // textName
             // 
-            this.textName.Location = new System.Drawing.Point(192, 174);
+            this.textName.Location = new System.Drawing.Point(193, 113);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(230, 27);
+            this.textName.Size = new System.Drawing.Size(326, 27);
             this.textName.TabIndex = 1;
             // 
             // textSurname
             // 
-            this.textSurname.Location = new System.Drawing.Point(192, 207);
+            this.textSurname.Location = new System.Drawing.Point(193, 146);
             this.textSurname.Name = "textSurname";
-            this.textSurname.Size = new System.Drawing.Size(230, 27);
+            this.textSurname.Size = new System.Drawing.Size(326, 27);
             this.textSurname.TabIndex = 1;
             // 
             // backToLogin
             // 
-            this.backToLogin.Location = new System.Drawing.Point(492, 328);
+            this.backToLogin.Location = new System.Drawing.Point(362, 221);
             this.backToLogin.Name = "backToLogin";
-            this.backToLogin.Size = new System.Drawing.Size(212, 29);
+            this.backToLogin.Size = new System.Drawing.Size(157, 39);
             this.backToLogin.TabIndex = 0;
             this.backToLogin.Text = "BACK";
             this.backToLogin.UseVisualStyleBackColor = true;
@@ -91,44 +93,62 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 108);
+            this.label1.Location = new System.Drawing.Point(62, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 20);
+            this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Username";
+            this.label1.Text = "USERNAME :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 141);
+            this.label2.Location = new System.Drawing.Point(62, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
+            this.label2.Size = new System.Drawing.Size(94, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Password";
+            this.label2.Text = "PASSWORD :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 174);
+            this.label3.Location = new System.Drawing.Point(62, 116);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Name";
+            this.label3.Text = "NAME :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 207);
+            this.label4.Location = new System.Drawing.Point(62, 149);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 20);
+            this.label4.Size = new System.Drawing.Size(85, 20);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Surname";
+            this.label4.Text = "SURNAME :";
+            // 
+            // descriptionLabel
+            // 
+            this.descriptionLabel.AutoSize = true;
+            this.descriptionLabel.Location = new System.Drawing.Point(62, 182);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(107, 20);
+            this.descriptionLabel.TabIndex = 2;
+            this.descriptionLabel.Text = "DESCRIPTION :";
+            // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.Location = new System.Drawing.Point(193, 179);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(326, 27);
+            this.descriptionTextBox.TabIndex = 1;
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(576, 322);
+            this.Controls.Add(this.descriptionTextBox);
+            this.Controls.Add(this.descriptionLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -141,6 +161,7 @@
             this.Controls.Add(this.register);
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";
+            this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +179,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox descriptionTextBox;
+        private System.Windows.Forms.Label descriptionLabel;
     }
 }

@@ -79,6 +79,8 @@
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(281, 27);
             this.dateTimePicker.TabIndex = 2;
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker.CustomFormat = "dd/MM/yyyy";
             // 
             // descriptionTextBox
             // 

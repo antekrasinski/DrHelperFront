@@ -40,7 +40,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(76, 50);
+            this.label2.Location = new System.Drawing.Point(76, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 20);
             this.label2.TabIndex = 0;
@@ -49,7 +49,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(76, 80);
+            this.label4.Location = new System.Drawing.Point(76, 76);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 0;
@@ -66,7 +66,9 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(186, 35);
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(186, 39);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(325, 27);
             this.dateTimePicker1.TabIndex = 1;
@@ -74,16 +76,16 @@
             // patientComboBox
             // 
             this.patientComboBox.FormattingEnabled = true;
-            this.patientComboBox.Location = new System.Drawing.Point(186, 69);
+            this.patientComboBox.Location = new System.Drawing.Point(186, 73);
             this.patientComboBox.Name = "patientComboBox";
             this.patientComboBox.Size = new System.Drawing.Size(325, 28);
             this.patientComboBox.TabIndex = 2;
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(186, 285);
+            this.saveButton.Location = new System.Drawing.Point(186, 315);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(161, 29);
+            this.saveButton.Size = new System.Drawing.Size(161, 37);
             this.saveButton.TabIndex = 3;
             this.saveButton.Text = "SAVE CHANGES";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -91,19 +93,19 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(350, 285);
+            this.cancelButton.Location = new System.Drawing.Point(350, 315);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(161, 29);
+            this.cancelButton.Size = new System.Drawing.Size(161, 37);
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "CANCEL";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // CreatePerscription
+            // CreatePrescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 378);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.patientComboBox);
@@ -111,7 +113,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Name = "CreatePerscription";
+            this.Name = "CreatePrescription";
             this.Text = "CreatePerscription";
             this.Load += new System.EventHandler(this.CreatePerscription_Load);
             this.ResumeLayout(false);

@@ -52,7 +52,7 @@ namespace DrHelperFront
                     return;
                 }
                 var connection = JsonConvert.DeserializeObject<dynamic>(strResponse);
-                medicineLabel.Text += element.name + " (" + connection.amount + ")\n";
+                medicineListBox.Items.Add(element.name + " (" + connection.amount + ")");
             }
 
             rest.endPoint = "https://localhost:5001/api/perscriptions/users/" + chosenPerscription.idPrescription;
@@ -100,7 +100,8 @@ namespace DrHelperFront
                     otherUserLabel.Text = "PATIENT :";
                 }
                 otherUserLinkLabel.Text = otherUser.name + " " + otherUser.surname;
-                dateLabel.Text = chosenPerscription.prescriptionDate;
+                DateTime date = DateTime.Parse(chosenPerscription.prescriptionDate);
+                dateLabel.Text = date.Day + "/" + date.Month + "/" + date.Year + " " + date.TimeOfDay;
             }
         }
 

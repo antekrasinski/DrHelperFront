@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.otherUserLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.medicineLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
             this.otherUserLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.medicineListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // otherUserLinkLabel
@@ -46,14 +46,6 @@
             this.otherUserLinkLabel.TabStop = true;
             this.otherUserLinkLabel.Text = "linkLabel2";
             this.otherUserLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.otherUserLinkLabel_LinkClicked);
-            // 
-            // medicineLabel
-            // 
-            this.medicineLabel.AutoSize = true;
-            this.medicineLabel.Location = new System.Drawing.Point(203, 110);
-            this.medicineLabel.Name = "medicineLabel";
-            this.medicineLabel.Size = new System.Drawing.Size(0, 20);
-            this.medicineLabel.TabIndex = 0;
             // 
             // label2
             // 
@@ -91,16 +83,25 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "MEDICINE :";
             // 
+            // medicineListBox
+            // 
+            this.medicineListBox.FormattingEnabled = true;
+            this.medicineListBox.ItemHeight = 20;
+            this.medicineListBox.Location = new System.Drawing.Point(203, 110);
+            this.medicineListBox.Name = "medicineListBox";
+            this.medicineListBox.Size = new System.Drawing.Size(297, 184);
+            this.medicineListBox.TabIndex = 2;
+            // 
             // PrescriptionsDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(569, 339);
+            this.Controls.Add(this.medicineListBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.otherUserLabel);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.medicineLabel);
             this.Controls.Add(this.otherUserLinkLabel);
             this.Name = "PrescriptionsDetailsForm";
             this.Text = "PrescriptionsDetailsForm";
@@ -113,10 +114,10 @@
         #endregion
 
         private System.Windows.Forms.LinkLabel otherUserLinkLabel;
-        private System.Windows.Forms.Label medicineLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Label otherUserLabel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListBox medicineListBox;
     }
 }

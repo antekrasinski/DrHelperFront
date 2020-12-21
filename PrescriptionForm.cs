@@ -61,6 +61,7 @@ namespace DrHelperFront
         {
             //Get all users perscriptions
             prescriptionsListBox.Items.Clear();
+            prescriptionList.Clear();
             Rest rest = new Rest();
             rest.endPoint = "https://localhost:5001/api/perscriptions/user/" + loggedUser.idUser;
             rest.httpMethod = httpVerb.GET;
@@ -78,12 +79,17 @@ namespace DrHelperFront
 
             foreach (Prescription element in prescriptionList)
             {
-                prescriptionsListBox.Items.Add(element.prescriptionDate);
+                DateTime date = DateTime.Parse(element.prescriptionDate);
+                prescriptionsListBox.Items.Add(date.Day + "/" + date.Month + "/" + date.Year + " " + date.TimeOfDay);
             }
             if (prescriptionList.Count != 0)
             {
                 prescriptionsListBox.SelectedIndex = 0;
                 chosenPrescription = prescriptionList[0];
+            }
+            if(loggedUser.idUserType == 3)
+            {
+                createButton.Hide();
             }
         }
     }

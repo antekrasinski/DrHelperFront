@@ -103,6 +103,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(179, 159);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(240, 27);
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.TabIndex = 1;
             // 
             // changeHistoryButton

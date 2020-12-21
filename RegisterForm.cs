@@ -12,6 +12,7 @@ namespace DrHelperFront
 {
     public partial class RegisterForm : Form
     {
+        public bool isAdmin = false;
         public RegisterForm()
         {
             InitializeComponent();
@@ -25,7 +26,12 @@ namespace DrHelperFront
             newOne.name = textName.Text;
             newOne.surname = textSurname.Text;
             newOne.idUserType = 3;
-
+            
+            if (isAdmin)
+            {
+                newOne.idUserType = 2;
+                newOne.description = descriptionTextBox.Text;
+            }
             var json = JsonConvert.SerializeObject(newOne);
 
             Rest rest = new Rest();
@@ -43,20 +49,30 @@ namespace DrHelperFront
                 MessageBox.Show("Wystapil problem z rejestracja");
                 return;
             }
-            MessageBox.Show("Udana rejestracja!");
-            var docSelectForm = new DoctorSelectionForm();
-            docSelectForm.loggedUser = newOne;
-            docSelectForm.Location = this.Location;
-            docSelectForm.FormClosing += delegate { this.Close(); };
-            docSelectForm.StartPosition = FormStartPosition.Manual;
-            docSelectForm.Show();
-            this.Hide();
-
+            MessageBox.Show("SUCCESS!");
+            if (!isAdmin)
+            {
+                var docSelectForm = new DoctorSelectionForm();
+                docSelectForm.loggedUser = newOne;
+                docSelectForm.Location = this.Location;
+                docSelectForm.StartPosition = FormStartPosition.Manual;
+                docSelectForm.Show();
+            }
+            this.Close();
         }        
         
         private void backToLogin_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+            if(!isAdmin)
+            {
+                descriptionLabel.Hide();
+                descriptionTextBox.Hide();
+            }
         }
     }
 }

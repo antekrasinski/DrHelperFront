@@ -29,3 +29,5 @@ C:\Users\antek\Documents\Studia\Inżynierka\DrHelperFront\DrHelperFront\obj\Debu
 C:\Users\antek\Documents\Studia\Inżynierka\DrHelperFront\DrHelperFront\obj\Debug\netcoreapp3.1\DrHelperFront.CreatePrescription.resources
 C:\Users\antek\Documents\Studia\Inżynierka\DrHelperFront\DrHelperFront\obj\Debug\netcoreapp3.1\DrHelperFront.PrescriptionForm.resources
 C:\Users\antek\Documents\Studia\Inżynierka\DrHelperFront\DrHelperFront\obj\Debug\netcoreapp3.1\DrHelperFront.PrescriptionsDetailsForm.resources
+C:\Users\antek\Documents\Studia\Inżynierka\DrHelperFront\DrHelperFront\obj\Debug\netcoreapp3.1\DrHelperFront.AdminsForms.LoadDataForm.resources
+C:\Users\antek\Documents\Studia\Inżynierka\DrHelperFront\DrHelperFront\obj\Debug\netcoreapp3.1\DrHelperFront.AdminsForms.UsersSelectionForm.resources

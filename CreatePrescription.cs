@@ -68,7 +68,6 @@ namespace DrHelperFront
             dataGridView.BackgroundColor = Color.LightGray;
             dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             dataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridView.GridColor = Color.Black;
 
             DataGridViewComboBoxColumn medicineColumn = new DataGridViewComboBoxColumn();
             foreach(Medicine element in medicineList)
@@ -77,6 +76,8 @@ namespace DrHelperFront
             }
             dataGridView.Columns.AddRange(medicineColumn);
             dataGridView.ColumnCount = 2;
+            dataGridView.Columns[0].HeaderText = "MEDICINE";
+            dataGridView.Columns[1].HeaderText = "AMOUNT";
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -179,6 +180,8 @@ namespace DrHelperFront
                     return;
                 }
             }
+            MessageBox.Show("Succesfuly created prescription.");
+            this.Close();
         }
     }
 }

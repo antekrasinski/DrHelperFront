@@ -1,4 +1,5 @@
-﻿using DrHelperFront.DoctorsForms;
+﻿using DrHelperFront.AdminsForms;
+using DrHelperFront.DoctorsForms;
 using DrHelperFront.Models;
 using Newtonsoft.Json;
 using System;
@@ -49,7 +50,17 @@ namespace DrHelperFront
             //Admin logged in
             if (loggedUser.idUserType == 1)
             {
-
+                var adminMenuForm = new UsersSelectionForm();
+                adminMenuForm.loggedUser = loggedUser;
+                adminMenuForm.Location = this.Location;
+                adminMenuForm.StartPosition = FormStartPosition.Manual;
+                adminMenuForm.FormClosing += delegate
+                {
+                    this.LoginForm_Load(sender, e);
+                    this.Show();
+                };
+                adminMenuForm.Show();
+                this.Hide();
             }
             //Doctor logged in
             else if (loggedUser.idUserType == 2)
@@ -59,7 +70,11 @@ namespace DrHelperFront
                 doctorsMenuForm.loggedUser = loggedUser;
                 doctorsMenuForm.Location = this.Location;
                 doctorsMenuForm.StartPosition = FormStartPosition.Manual;
-                doctorsMenuForm.FormClosing += delegate { this.Show(); };
+                doctorsMenuForm.FormClosing += delegate 
+                {
+                    this.LoginForm_Load(sender, e);
+                    this.Show(); 
+                };
                 doctorsMenuForm.Show();
                 this.Hide();
             }
@@ -71,7 +86,11 @@ namespace DrHelperFront
                 docSelectForm.loggedUser = loggedUser;
                 docSelectForm.Location = this.Location;
                 docSelectForm.StartPosition = FormStartPosition.Manual;
-                docSelectForm.FormClosing += delegate { this.Show(); };
+                docSelectForm.FormClosing += delegate
+                {
+                    this.LoginForm_Load(sender, e); 
+                    this.Show(); 
+                };
                 docSelectForm.Show();
                 this.Hide();
             }
@@ -82,9 +101,19 @@ namespace DrHelperFront
             var registerForm = new RegisterForm();
             registerForm.Location = this.Location;
             registerForm.StartPosition = FormStartPosition.Manual;
-            registerForm.FormClosing += delegate { this.Show(); };
+            registerForm.FormClosing += delegate 
+            {
+                this.LoginForm_Load(sender, e);
+                this.Show(); 
+            };
             registerForm.Show();
             this.Hide();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            loginTextBox.Clear();
+            passwordTextBox.Clear();
         }
     }
 }

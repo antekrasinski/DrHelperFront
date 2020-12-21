@@ -66,6 +66,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(281, 184);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(199, 27);
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.TabIndex = 2;
             // 
             // LoginForm
@@ -79,6 +80,7 @@
             this.Controls.Add(this.login);
             this.Name = "LoginForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
