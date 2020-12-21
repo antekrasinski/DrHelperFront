@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SRrNCD7xIMJSpiihxsmiVcmUTzuvJgMp8E33TXHkrh5W1qj1/+lohhU1iV7HU4cYP6RrQmxv5iOot6ctFoJOeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\antek\\Documents\\Studia\\Inżynierka\\DrHelperFront\\DrHelperFront\\DrHelperFront.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\antek\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\antek\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

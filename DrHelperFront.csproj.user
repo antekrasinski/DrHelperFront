@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="ChangeDiseasesHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreatePrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DiseasesHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DoctorsForms\DoctorsMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DoctorsForms\PatientProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DoctorsForms\ShiftForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PrescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PrescriptionsDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UsersForms\DoctorSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SchedulerFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditUsersProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AppointmentDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UsersForms\DoctorProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
