@@ -70,30 +70,30 @@ namespace DrHelperFront.DoctorsForms
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(262, 43);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(282, 27);
             this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(262, 77);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(282, 27);
             this.dateTimePicker2.TabIndex = 1;
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             // 
             // dateTimePicker3
             // 
+            this.dateTimePicker3.CustomFormat = "HH:mm";
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker3.Location = new System.Drawing.Point(263, 114);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(281, 27);
             this.dateTimePicker3.TabIndex = 2;
             this.dateTimePicker3.Value = new System.DateTime(2020, 12, 20, 0, 0, 0, 0);
-            this.dateTimePicker3.CustomFormat = "HH:mm";
             // 
             // saveButton
             // 
@@ -119,7 +119,7 @@ namespace DrHelperFront.DoctorsForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(724, 254);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.dateTimePicker3);

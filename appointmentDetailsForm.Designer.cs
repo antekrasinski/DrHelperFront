@@ -111,9 +111,9 @@
             // 
             // signOrCancelButton
             // 
-            this.signOrCancelButton.Location = new System.Drawing.Point(461, 65);
+            this.signOrCancelButton.Location = new System.Drawing.Point(403, 44);
             this.signOrCancelButton.Name = "signOrCancelButton";
-            this.signOrCancelButton.Size = new System.Drawing.Size(202, 29);
+            this.signOrCancelButton.Size = new System.Drawing.Size(276, 51);
             this.signOrCancelButton.TabIndex = 2;
             this.signOrCancelButton.Text = "CANCEL APPOINTMENT";
             this.signOrCancelButton.UseVisualStyleBackColor = true;
@@ -121,9 +121,9 @@
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(461, 100);
+            this.backButton.Location = new System.Drawing.Point(403, 101);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(202, 29);
+            this.backButton.Size = new System.Drawing.Size(276, 55);
             this.backButton.TabIndex = 2;
             this.backButton.Text = "BACK";
             this.backButton.UseVisualStyleBackColor = true;
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(726, 205);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.signOrCancelButton);
             this.Controls.Add(this.otherUserLinkLabel);

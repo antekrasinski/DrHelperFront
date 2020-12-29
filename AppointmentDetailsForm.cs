@@ -16,8 +16,8 @@ namespace DrHelperFront
         public Appointment selectedAppointment { get; set; }
         public Timeblock patientTimeblock { get; set; }
         public Timeblock doctorTimeblock { get; set; }
-        public User loggedUser { get; set; }
-        public User otherUser { get; set; }
+        public LoggedUser loggedUser { get; set; }
+        public BasicUser otherUser { get; set; }
 
         public appointmentDetailsForm()
         {

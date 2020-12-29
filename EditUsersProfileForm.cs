@@ -13,7 +13,7 @@ namespace DrHelperFront.UsersForms
 {
     public partial class EditUsersProfileForm : Form
     {
-        public User loggedUser { get; set; }
+        public LoggedUser loggedUser { get; set; }
 
         public EditUsersProfileForm()
         {
@@ -39,8 +39,16 @@ namespace DrHelperFront.UsersForms
             }
             else
             {
+                BasicUser basicUser = new BasicUser();
+                basicUser.idUser = loggedUser.idUser;
+                basicUser.name = loggedUser.name;
+                basicUser.surname = loggedUser.surname;
+                basicUser.username = loggedUser.username;
+                basicUser.description = loggedUser.description;
+                basicUser.idUserType = loggedUser.idUserType;
+
                 var historyForm = new DiseasesHistoryForm();
-                historyForm.historyUser = loggedUser;
+                historyForm.historyUser = basicUser;
                 historyForm.Location = this.Location;
                 historyForm.StartPosition = FormStartPosition.Manual;
                 historyForm.FormClosing += delegate { this.Show(); };
@@ -51,7 +59,7 @@ namespace DrHelperFront.UsersForms
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            User newOne = new User();
+            RegisterUser newOne = new RegisterUser();
             newOne.idUser = loggedUser.idUser;
             newOne.username = usernameTextBox.Text;
             newOne.password = passwordTextBox.Text;
@@ -76,7 +84,13 @@ namespace DrHelperFront.UsersForms
                 MessageBox.Show("Problem saving changes.");
                 return;
             }
-            loggedUser = newOne;
+            LoggedUser update = new LoggedUser();
+            update.idUser = newOne.idUser;
+            update.username = newOne.username;
+            update.name = newOne.name;
+            update.surname = newOne.surname;
+            update.idUserType = newOne.idUserType;
+            loggedUser = update;
         }
 
         private void editUsersProfileForm_Load(object sender, EventArgs e)
@@ -84,7 +98,7 @@ namespace DrHelperFront.UsersForms
             nameTextBox.Text = loggedUser.name;
             surnameTextBox.Text = loggedUser.surname;
             usernameTextBox.Text = loggedUser.username;
-            passwordTextBox.Text = loggedUser.password;
+            passwordTextBox.Text = "";
 
             //Hide changeHistoryButton for doctor
             if(loggedUser.idUserType == 2)

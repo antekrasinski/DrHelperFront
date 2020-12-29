@@ -16,8 +16,8 @@ namespace DrHelperFront
         public Timeblock chosenTimeblock { get; set; }
 
         public Timeblock otherTimeblock { get; set; }
-        public User chosenDoctor { get; set; }
-        public User loggedUser { get; set; }
+        public BasicUser chosenDoctor { get; set; }
+        public LoggedUser loggedUser { get; set; }
         
         public SchedulerFrom()
         {
@@ -106,7 +106,7 @@ namespace DrHelperFront
                         return;
                     }
                     var appointmentTimeblocks = JsonConvert.DeserializeObject<List<Timeblock>>(strResponse);
-                    User otherUser = new User();
+                    BasicUser otherUser = new BasicUser();
                     foreach (Timeblock element in appointmentTimeblocks)
                     {
                         if (element.idTimeblock != chosenTimeblock.idTimeblock)
@@ -126,7 +126,7 @@ namespace DrHelperFront
                         MessageBox.Show("Problem finding other user");
                         return;
                     }
-                    otherUser = JsonConvert.DeserializeObject<User>(strResponse);
+                    otherUser = JsonConvert.DeserializeObject<BasicUser>(strResponse);
 
                     var detailsForm = new appointmentDetailsForm
                     {

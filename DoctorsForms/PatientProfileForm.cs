@@ -11,8 +11,8 @@ namespace DrHelperFront.DoctorsForms
 {
     public partial class PatientProfileForm : Form
     {
-        public User patientUser { get; set; }
-        public User loggedUser { get; set; }
+        public BasicUser patientUser { get; set; }
+        public LoggedUser loggedUser { get; set; }
         public PatientProfileForm()
         {
             InitializeComponent();

@@ -65,6 +65,7 @@
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(326, 27);
             this.textPassword.TabIndex = 1;
+            this.textPassword.PasswordChar = '*';
             // 
             // textName
             // 

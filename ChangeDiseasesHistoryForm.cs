@@ -15,7 +15,7 @@ namespace DrHelperFront
         public Disease chosenDisease { get; set; }
         public UsersDiseases chosenUsersDiseases { get; set; }
         public List<Disease> allDiseases = new List<Disease>();
-        public User historyUser { get; set; }
+        public BasicUser historyUser { get; set; }
         public bool isEdit;
         public ChangeDiseasesHistoryForm()
         {

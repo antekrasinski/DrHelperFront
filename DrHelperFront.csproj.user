@@ -23,7 +23,7 @@
     <Compile Update="DoctorsForms\PatientProfileForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DoctorsForms\ShiftForm.cs">
+    <Compile Update="DoctorsForms\shiftForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PrescriptionForm.cs">

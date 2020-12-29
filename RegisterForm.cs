@@ -20,7 +20,7 @@ namespace DrHelperFront
 
         private void register_Click(object sender, EventArgs e)
         {
-            User newOne = new User();
+            RegisterUser newOne = new RegisterUser();
             newOne.username = textUsername.Text;
             newOne.password = textPassword.Text;
             newOne.name = textName.Text;
@@ -35,7 +35,7 @@ namespace DrHelperFront
             var json = JsonConvert.SerializeObject(newOne);
 
             Rest rest = new Rest();
-            rest.endPoint = "http://localhost:5000/api/users";
+            rest.endPoint = "https://localhost:5001/api/users";
             rest.httpMethod = httpVerb.POST;
             rest.content = json;
 
@@ -50,15 +50,17 @@ namespace DrHelperFront
                 return;
             }
             MessageBox.Show("SUCCESS!");
+
+            LoggedUser loggedUser = JsonConvert.DeserializeObject<LoggedUser>(strResponse);
             if (!isAdmin)
             {
                 var docSelectForm = new DoctorSelectionForm();
-                docSelectForm.loggedUser = newOne;
+                docSelectForm.loggedUser = loggedUser;
                 docSelectForm.Location = this.Location;
                 docSelectForm.StartPosition = FormStartPosition.Manual;
                 docSelectForm.Show();
             }
-            this.Close();
+            this.Hide();
         }        
         
         private void backToLogin_Click(object sender, EventArgs e)

@@ -14,7 +14,7 @@ namespace DrHelperFront
     {
         public List<Prescription> prescriptionList = new List<Prescription>();
         public Prescription chosenPrescription { get; set; }
-        public User loggedUser { get; set; }
+        public LoggedUser loggedUser { get; set; }
         public PrescriptionForm()
         {
             InitializeComponent();

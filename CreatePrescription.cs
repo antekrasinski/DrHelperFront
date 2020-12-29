@@ -15,8 +15,8 @@ namespace DrHelperFront
     {
         public DataGridView dataGridView = new DataGridView();
         public List<Medicine> medicineList = new List<Medicine>();
-        public List<User> patientList = new List<User>();
-        public User loggedUser = new User();
+        public List<BasicUser> patientList = new List<BasicUser>();
+        public LoggedUser loggedUser = new LoggedUser();
         public CreatePrescription()
         {
             InitializeComponent();
@@ -50,8 +50,8 @@ namespace DrHelperFront
                 MessageBox.Show("Problem getting users.");
                 return;
             }
-            var usersList = JsonConvert.DeserializeObject<List<User>>(strResponse);
-            foreach(User element in usersList)
+            var usersList = JsonConvert.DeserializeObject<List<BasicUser>>(strResponse);
+            foreach(BasicUser element in usersList)
             {
                 if(element.idUserType == 3)
                 {

@@ -102,8 +102,8 @@
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(179, 159);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(240, 27);
             this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.Size = new System.Drawing.Size(240, 27);
             this.passwordTextBox.TabIndex = 1;
             // 
             // changeHistoryButton
@@ -136,11 +136,11 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // editUsersProfileForm
+            // EditUsersProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 261);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.changeHistoryButton);
@@ -152,7 +152,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "editUsersProfileForm";
+            this.Name = "EditUsersProfileForm";
             this.Text = "editUsersProfileForm";
             this.Load += new System.EventHandler(this.editUsersProfileForm_Load);
             this.ResumeLayout(false);

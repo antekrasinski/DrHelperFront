@@ -19,7 +19,7 @@ namespace DrHelperFront
         public string endPoint { get; set; }
         public httpVerb httpMethod { get; set; }
         public string content { get; set; }
-
+        public string token { get; set; }
         public Rest()
         {
             endPoint = string.Empty;
@@ -36,7 +36,11 @@ namespace DrHelperFront
             request.Method = httpMethod.ToString();
             request.ContentLength = Encoding.ASCII.GetBytes(content).Length;
             request.ContentType = "application/json";
-            
+            if(token != string.Empty)
+            {
+                request.PreAuthenticate = true;
+                request.Headers.Add("Authorization", "bearer " + token);
+            }
             if (!string.IsNullOrEmpty(content))
             {
                 using (var streamWriter = new StreamWriter(request.GetRequestStream()))

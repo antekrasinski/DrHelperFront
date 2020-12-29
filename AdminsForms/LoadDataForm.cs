@@ -13,6 +13,7 @@ namespace DrHelperFront.AdminsForms
 {
     public partial class LoadDataForm : Form
     {
+        public LoggedUser loggedUser { get; set; }
         public LoadDataForm()
         {
             InitializeComponent();
@@ -83,9 +84,10 @@ namespace DrHelperFront.AdminsForms
 
                 string json = JsonConvert.SerializeObject(newOne);
 
-                rest.endPoint = "http://localhost:5000/api/diseases";
+                rest.endPoint = "https://localhost:5001/api/diseases";
                 rest.httpMethod = httpVerb.POST;
                 rest.content = json;
+                rest.token = loggedUser.token;
                 try
                 {
                     strResponse = rest.makeRequest();

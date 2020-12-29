@@ -12,7 +12,7 @@ namespace DrHelperFront
 {
     public partial class DiseasesHistoryForm : Form
     {
-        public User historyUser { get; set; }
+        public BasicUser historyUser { get; set; }
         public Disease chosenDisease { get; set; }
         public UsersDiseases chosenUsersDiseases { get; set; }
 

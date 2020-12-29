@@ -12,7 +12,7 @@ namespace DrHelperFront.DoctorsForms
 {
     public partial class shiftForm : Form
     {
-        public User loggedUser = new User();
+        public LoggedUser loggedUser = new LoggedUser();
         public shiftForm()
         {
             InitializeComponent();

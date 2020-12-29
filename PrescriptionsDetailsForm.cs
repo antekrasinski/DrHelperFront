@@ -13,8 +13,8 @@ namespace DrHelperFront
 {
     public partial class PrescriptionsDetailsForm : Form
     {
-        public User loggedUser { get; set; }
-        public User otherUser { get; set; }
+        public LoggedUser loggedUser { get; set; }
+        public BasicUser otherUser { get; set; }
         public Prescription chosenPerscription { get; set; }
         public PrescriptionsDetailsForm()
         {
@@ -89,7 +89,7 @@ namespace DrHelperFront
                     MessageBox.Show("Problem with getting medicine.");
                     return;
                 }
-                otherUser = JsonConvert.DeserializeObject<User>(strResponse);
+                otherUser = JsonConvert.DeserializeObject<BasicUser>(strResponse);
 
                 if (otherUser.idUserType == 2)
                 {

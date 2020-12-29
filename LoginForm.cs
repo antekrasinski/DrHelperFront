@@ -16,7 +16,7 @@ namespace DrHelperFront
 {
     public partial class LoginForm : Form
     {
-        User loggedUser { get; set; }
+        LoggedUser loggedUser { get; set; }
         public LoginForm()
         {
             InitializeComponent();
@@ -46,7 +46,7 @@ namespace DrHelperFront
                 return;
             }
 
-            loggedUser = JsonConvert.DeserializeObject<User>(strResponse);
+            loggedUser = JsonConvert.DeserializeObject<LoggedUser>(strResponse);
             //Admin logged in
             if (loggedUser.idUserType == 1)
             {

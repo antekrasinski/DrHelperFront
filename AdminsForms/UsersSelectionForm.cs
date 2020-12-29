@@ -13,9 +13,9 @@ namespace DrHelperFront.AdminsForms
 {
     public partial class UsersSelectionForm : Form
     {
-        public List<User> usersList = new List<User>();
-        public User loggedUser { get; set; }
-        public User chosenUser { get; set; }
+        public List<BasicUser> usersList = new List<BasicUser>();
+        public LoggedUser loggedUser { get; set; }
+        public BasicUser chosenUser { get; set; }
 
         public UsersSelectionForm()
         {
@@ -65,6 +65,7 @@ namespace DrHelperFront.AdminsForms
         {
             var loadDataForm = new LoadDataForm();
             loadDataForm.Location = this.Location;
+            loadDataForm.loggedUser = loggedUser;
             loadDataForm.StartPosition = FormStartPosition.Manual;
             loadDataForm.FormClosing += delegate
             {
@@ -107,9 +108,9 @@ namespace DrHelperFront.AdminsForms
                 MessageBox.Show("Problem getting list of doctors.");
                 return;
             }
-            var allUsers = JsonConvert.DeserializeObject<List<User>>(strResponse);
+            var allUsers = JsonConvert.DeserializeObject<List<BasicUser>>(strResponse);
 
-            foreach (User element in allUsers)
+            foreach (BasicUser element in allUsers)
             {
                 //All patients and doctors
                 if (element.idUserType != 1)

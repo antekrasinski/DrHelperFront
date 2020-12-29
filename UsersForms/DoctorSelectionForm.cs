@@ -13,10 +13,10 @@ namespace DrHelperFront
 {
     public partial class DoctorSelectionForm : Form
     {
-        public User loggedUser { get; set; }
-        public User chosenDoctor { get; set; }
+        public LoggedUser loggedUser { get; set; }
+        public BasicUser chosenDoctor { get; set; }
 
-        public List<User> docList = new List<User>();
+        public List<BasicUser> docList = new List<BasicUser>();
 
         public DoctorSelectionForm()
         {
@@ -47,10 +47,10 @@ namespace DrHelperFront
                 MessageBox.Show("Problem getting list of doctors.");
                 return;
             }
-            var usersList = JsonConvert.DeserializeObject<List<User>>(strResponse);
+            var usersList = JsonConvert.DeserializeObject<List<BasicUser>>(strResponse);
 
             //Create list with doctors
-            foreach (User element in usersList)
+            foreach (BasicUser element in usersList)
             {
                 //Other then patiens == doctorsId
                 if (element.idUserType == 2)

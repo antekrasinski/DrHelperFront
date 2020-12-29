@@ -12,7 +12,7 @@ namespace DrHelperFront.DoctorsForms
 {
     public partial class DoctorsMenuForm : Form
     {
-        public User loggedUser = new User();
+        public LoggedUser loggedUser { get; set; }
         public DoctorsMenuForm()
         {
             InitializeComponent();
