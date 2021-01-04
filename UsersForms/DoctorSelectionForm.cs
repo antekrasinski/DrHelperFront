@@ -44,7 +44,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem getting list of doctors.");
+                MessageBox.Show("Problem z wczytywaniem lekarzy.");
                 return;
             }
             var usersList = JsonConvert.DeserializeObject<List<BasicUser>>(strResponse);

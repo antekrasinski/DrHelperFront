@@ -39,7 +39,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem loading diseases.");
+                MessageBox.Show("Problem z wczytaniem leków.");
                 return;
             }
             var usersDiseases = JsonConvert.DeserializeObject<List<UsersDiseases>>(strResponse);
@@ -55,7 +55,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with finding disease");
+                    MessageBox.Show("Problem ze znalezieniem choroby.");
                     return;
                 }
                 disease = new Disease();
@@ -146,7 +146,7 @@ namespace DrHelperFront
             if (diseasesListBox.SelectedIndex != -1)
             {
                 Rest rest = new Rest();
-                rest.endPoint = "http://localhost:5000/api/usersDiseases/" + usersDiseasesList[diseasesListBox.SelectedIndex].idUsersDiseases;
+                rest.endPoint = "https://localhost:5001/api/usersDiseases/" + usersDiseasesList[diseasesListBox.SelectedIndex].idUsersDiseases;
                 rest.httpMethod = httpVerb.DELETE;
                 string strResponse = string.Empty;
                 try
@@ -155,7 +155,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem removing connection.");
+                    MessageBox.Show("Problem z usuwaniem pozycji.");
                     return;
                 }
 

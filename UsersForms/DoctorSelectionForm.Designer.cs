@@ -57,9 +57,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(460, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.Size = new System.Drawing.Size(45, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "NAME :";
+            this.label1.Text = "IMIĘ :";
             // 
             // nameLabel
             // 
@@ -74,9 +74,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(460, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 20);
+            this.label3.Size = new System.Drawing.Size(91, 20);
             this.label3.TabIndex = 1;
-            this.label3.Text = "SURNAME :";
+            this.label3.Text = "NAZWISKO :";
             // 
             // surnameLabel
             // 
@@ -89,16 +89,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(460, 117);
+            this.label5.Location = new System.Drawing.Point(460, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 20);
+            this.label5.Size = new System.Drawing.Size(47, 20);
             this.label5.TabIndex = 1;
-            this.label5.Text = "DESCRIPTION :";
+            this.label5.Text = "OPIS :";
             // 
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(573, 117);
+            this.descriptionLabel.Location = new System.Drawing.Point(573, 115);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(0, 20);
             this.descriptionLabel.TabIndex = 1;
@@ -109,7 +109,7 @@
             this.doctorsScheduleButton.Name = "doctorsScheduleButton";
             this.doctorsScheduleButton.Size = new System.Drawing.Size(297, 40);
             this.doctorsScheduleButton.TabIndex = 2;
-            this.doctorsScheduleButton.Text = "SHOW DOCTORS SCHEDULE";
+            this.doctorsScheduleButton.Text = "TERMINARZ LEKARZA";
             this.doctorsScheduleButton.UseVisualStyleBackColor = true;
             this.doctorsScheduleButton.Click += new System.EventHandler(this.doctorsScheduleButton_Click);
             // 
@@ -119,7 +119,7 @@
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(297, 40);
             this.logoutButton.TabIndex = 2;
-            this.logoutButton.Text = "LOGOUT";
+            this.logoutButton.Text = "WYLOGUJ SIĘ";
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
@@ -129,7 +129,7 @@
             this.usersScheduleButton.Name = "usersScheduleButton";
             this.usersScheduleButton.Size = new System.Drawing.Size(297, 40);
             this.usersScheduleButton.TabIndex = 2;
-            this.usersScheduleButton.Text = "SHOW MY SCHEDULE";
+            this.usersScheduleButton.Text = "TWÓJ TERMINARZ";
             this.usersScheduleButton.UseVisualStyleBackColor = true;
             this.usersScheduleButton.Click += new System.EventHandler(this.usersScheduleButton_Click);
             // 
@@ -139,7 +139,7 @@
             this.prescriptionsButton.Name = "prescriptionsButton";
             this.prescriptionsButton.Size = new System.Drawing.Size(297, 40);
             this.prescriptionsButton.TabIndex = 2;
-            this.prescriptionsButton.Text = "PRESCRIPTIONS";
+            this.prescriptionsButton.Text = "RECEPTY";
             this.prescriptionsButton.UseVisualStyleBackColor = true;
             this.prescriptionsButton.Click += new System.EventHandler(this.prescriptionsButton_Click);
             // 
@@ -149,7 +149,7 @@
             this.editProfileButton.Name = "editProfileButton";
             this.editProfileButton.Size = new System.Drawing.Size(297, 40);
             this.editProfileButton.TabIndex = 2;
-            this.editProfileButton.Text = "EDIT PROFILE";
+            this.editProfileButton.Text = "EDYTUJ PROFIL";
             this.editProfileButton.UseVisualStyleBackColor = true;
             this.editProfileButton.Click += new System.EventHandler(this.editProfileButton_Click);
             // 
@@ -157,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(786, 435);
             this.Controls.Add(this.editProfileButton);
             this.Controls.Add(this.prescriptionsButton);
             this.Controls.Add(this.usersScheduleButton);
@@ -171,7 +171,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.doctorsList);
             this.Name = "DoctorSelectionForm";
-            this.Text = "DoctorSelectionForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.DoctorSelectionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -40,7 +40,7 @@
             this.scheduleButton.Name = "scheduleButton";
             this.scheduleButton.Size = new System.Drawing.Size(199, 79);
             this.scheduleButton.TabIndex = 0;
-            this.scheduleButton.Text = "SCHEDULE";
+            this.scheduleButton.Text = "TERMINARZ";
             this.scheduleButton.UseVisualStyleBackColor = true;
             this.scheduleButton.Click += new System.EventHandler(this.scheduleButton_Click);
             // 
@@ -50,7 +50,7 @@
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(199, 79);
             this.editButton.TabIndex = 0;
-            this.editButton.Text = "EDIT PROFILE";
+            this.editButton.Text = "EDYTUJ PROFIL";
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
@@ -60,7 +60,7 @@
             this.prescriptionsButton.Name = "prescriptionsButton";
             this.prescriptionsButton.Size = new System.Drawing.Size(199, 79);
             this.prescriptionsButton.TabIndex = 0;
-            this.prescriptionsButton.Text = "PRESCRIPTIONS";
+            this.prescriptionsButton.Text = "RECEPTY";
             this.prescriptionsButton.UseVisualStyleBackColor = true;
             this.prescriptionsButton.Click += new System.EventHandler(this.perscriptionsButton_Click);
             // 
@@ -70,7 +70,7 @@
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(199, 79);
             this.logoutButton.TabIndex = 0;
-            this.logoutButton.Text = "LOGOUT";
+            this.logoutButton.Text = "WYLOGUJ SIĘ";
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
@@ -78,13 +78,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 336);
+            this.ClientSize = new System.Drawing.Size(762, 331);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.prescriptionsButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.scheduleButton);
             this.Name = "DoctorsMenuForm";
-            this.Text = "DoctorsMenu";
+            this.Text = "DrHelper";
             this.ResumeLayout(false);
 
         }

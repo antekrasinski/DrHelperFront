@@ -70,7 +70,7 @@ namespace DrHelperFront.UsersForms
             var json = JsonConvert.SerializeObject(newOne);
 
             Rest rest = new Rest();
-            rest.endPoint = "http://localhost:5000/api/users/"+loggedUser.idUser;
+            rest.endPoint = "https://localhost:5001/api/users/"+loggedUser.idUser;
             rest.httpMethod = httpVerb.PUT;
             rest.content = json;
 
@@ -81,7 +81,7 @@ namespace DrHelperFront.UsersForms
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem saving changes.");
+                MessageBox.Show("Problem z zapisaniem zmian.");
                 return;
             }
             LoggedUser update = new LoggedUser();
@@ -103,7 +103,7 @@ namespace DrHelperFront.UsersForms
             //Hide changeHistoryButton for doctor
             if(loggedUser.idUserType == 2)
             {
-                changeHistoryButton.Text = "EDIT SHIFT HOURS";
+                changeHistoryButton.Text = "DODAJ ZMIANĘ";
             }
         }
     }

@@ -77,7 +77,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(70, 115);
+            this.label5.Location = new System.Drawing.Point(70, 112);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 0;
@@ -86,7 +86,7 @@
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(184, 115);
+            this.descriptionLabel.Location = new System.Drawing.Point(184, 112);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(50, 20);
             this.descriptionLabel.TabIndex = 0;
@@ -94,21 +94,21 @@
             // 
             // scheduleButton
             // 
-            this.scheduleButton.Location = new System.Drawing.Point(471, 64);
+            this.scheduleButton.Location = new System.Drawing.Point(376, 51);
             this.scheduleButton.Name = "scheduleButton";
-            this.scheduleButton.Size = new System.Drawing.Size(199, 39);
+            this.scheduleButton.Size = new System.Drawing.Size(199, 41);
             this.scheduleButton.TabIndex = 1;
-            this.scheduleButton.Text = "SHOW SCHEDULE";
+            this.scheduleButton.Text = "TERMINARZ";
             this.scheduleButton.UseVisualStyleBackColor = true;
             this.scheduleButton.Click += new System.EventHandler(this.scheduleButton_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(471, 115);
+            this.button1.Location = new System.Drawing.Point(376, 98);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 38);
+            this.button1.Size = new System.Drawing.Size(199, 41);
             this.button1.TabIndex = 2;
-            this.button1.Text = "BACK";
+            this.button1.Text = "WSTECZ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 193);
+            this.ClientSize = new System.Drawing.Size(664, 190);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.scheduleButton);
             this.Controls.Add(this.descriptionLabel);
@@ -126,7 +126,7 @@
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.label1);
             this.Name = "DoctorProfileForm";
-            this.Text = "UserDoctorProfileForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.UserDoctorProfileForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -50,7 +50,7 @@
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(297, 40);
             this.backButton.TabIndex = 2;
-            this.backButton.Text = "BACK";
+            this.backButton.Text = "WSTECZ";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
@@ -60,7 +60,7 @@
             this.createButton.Name = "createButton";
             this.createButton.Size = new System.Drawing.Size(297, 40);
             this.createButton.TabIndex = 2;
-            this.createButton.Text = "CREATE PRESCRIPTION";
+            this.createButton.Text = "STWÓRZ RECEPTĘ";
             this.createButton.UseVisualStyleBackColor = true;
             this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
@@ -70,7 +70,7 @@
             this.detailsButton.Name = "detailsButton";
             this.detailsButton.Size = new System.Drawing.Size(297, 40);
             this.detailsButton.TabIndex = 2;
-            this.detailsButton.Text = "DETAILS";
+            this.detailsButton.Text = "SZCZEGÓŁY";
             this.detailsButton.UseVisualStyleBackColor = true;
             this.detailsButton.Click += new System.EventHandler(this.detailsButton_Click);
             // 
@@ -84,7 +84,7 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.prescriptionsListBox);
             this.Name = "PrescriptionForm";
-            this.Text = "PrescriptionForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.PrescriptionForm_Load);
             this.ResumeLayout(false);
 

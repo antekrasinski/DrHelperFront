@@ -40,29 +40,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(76, 44);
+            this.label2.Location = new System.Drawing.Point(73, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 20);
+            this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "DATE :";
+            this.label2.Text = "DATA :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(76, 76);
+            this.label4.Location = new System.Drawing.Point(73, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "PATIENT :";
+            this.label4.Text = "PACJENT :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(76, 109);
+            this.label5.Location = new System.Drawing.Point(73, 109);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 20);
+            this.label5.Size = new System.Drawing.Size(44, 20);
             this.label5.TabIndex = 0;
-            this.label5.Text = "MEDICINE :";
+            this.label5.Text = "LEKI :";
             // 
             // dateTimePicker1
             // 
@@ -83,9 +83,9 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(186, 315);
+            this.saveButton.Location = new System.Drawing.Point(76, 315);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(161, 37);
+            this.saveButton.Size = new System.Drawing.Size(212, 41);
             this.saveButton.TabIndex = 3;
             this.saveButton.Text = "SAVE CHANGES";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(350, 315);
+            this.cancelButton.Location = new System.Drawing.Point(294, 315);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(161, 37);
+            this.cancelButton.Size = new System.Drawing.Size(217, 41);
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "CANCEL";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Name = "CreatePrescription";
-            this.Text = "CreatePerscription";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.CreatePerscription_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

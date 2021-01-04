@@ -36,7 +36,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(457, 18);
+            this.monthCalendar1.Location = new System.Drawing.Point(457, 54);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -52,21 +52,21 @@
             // 
             // details
             // 
-            this.details.Location = new System.Drawing.Point(503, 264);
+            this.details.Location = new System.Drawing.Point(501, 299);
             this.details.Name = "details";
-            this.details.Size = new System.Drawing.Size(248, 49);
+            this.details.Size = new System.Drawing.Size(248, 41);
             this.details.TabIndex = 2;
-            this.details.Text = "DETAILS";
+            this.details.Text = "SZCZEGÓŁY";
             this.details.UseVisualStyleBackColor = false;
             this.details.Click += new System.EventHandler(this.details_Click);
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(503, 319);
+            this.backButton.Location = new System.Drawing.Point(501, 346);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(248, 49);
+            this.backButton.Size = new System.Drawing.Size(248, 41);
             this.backButton.TabIndex = 2;
-            this.backButton.Text = "BACK";
+            this.backButton.Text = "WSTECZ";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
@@ -80,7 +80,7 @@
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.monthCalendar1);
             this.Name = "SchedulerFrom";
-            this.Text = "SchedulerFrom";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.SchedulerFrom_Load);
             this.ResumeLayout(false);
 

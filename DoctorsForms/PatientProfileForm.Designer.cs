@@ -38,28 +38,28 @@
             // 
             // historyButton
             // 
-            this.historyButton.Location = new System.Drawing.Point(462, 39);
+            this.historyButton.Location = new System.Drawing.Point(387, 48);
             this.historyButton.Name = "historyButton";
-            this.historyButton.Size = new System.Drawing.Size(199, 39);
+            this.historyButton.Size = new System.Drawing.Size(231, 39);
             this.historyButton.TabIndex = 1;
-            this.historyButton.Text = "SHOW DISEASES HISTORY";
+            this.historyButton.Text = "HISTORIA CHORÓB";
             this.historyButton.UseVisualStyleBackColor = true;
             this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(462, 90);
+            this.backButton.Location = new System.Drawing.Point(387, 93);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(199, 38);
+            this.backButton.Size = new System.Drawing.Size(231, 41);
             this.backButton.TabIndex = 2;
-            this.backButton.Text = "BACK";
+            this.backButton.Text = "WSTECZ";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // surnameLabel
             // 
             this.surnameLabel.AutoSize = true;
-            this.surnameLabel.Location = new System.Drawing.Point(204, 87);
+            this.surnameLabel.Location = new System.Drawing.Point(180, 89);
             this.surnameLabel.Name = "surnameLabel";
             this.surnameLabel.Size = new System.Drawing.Size(50, 20);
             this.surnameLabel.TabIndex = 0;
@@ -68,7 +68,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(90, 87);
+            this.label4.Location = new System.Drawing.Point(66, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 20);
             this.label4.TabIndex = 0;
@@ -77,7 +77,7 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(204, 58);
+            this.nameLabel.Location = new System.Drawing.Point(180, 60);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(50, 20);
             this.nameLabel.TabIndex = 0;
@@ -86,7 +86,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(90, 58);
+            this.label6.Location = new System.Drawing.Point(66, 60);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 20);
             this.label6.TabIndex = 0;
@@ -96,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(659, 174);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.label4);
@@ -104,7 +104,7 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.historyButton);
             this.Name = "PatientProfileForm";
-            this.Text = "PatientProfileForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.PatientProfileForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

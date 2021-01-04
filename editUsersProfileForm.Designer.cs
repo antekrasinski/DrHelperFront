@@ -48,7 +48,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "NAME : ";
+            this.label1.Text = "IMIĘ : ";
             // 
             // label2
             // 
@@ -57,7 +57,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "SURNAME : ";
+            this.label2.Text = "NAZWISKO : ";
             // 
             // label3
             // 
@@ -66,7 +66,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 0;
-            this.label3.Text = "USERNAME :";
+            this.label3.Text = "LOGIN :";
             // 
             // label4
             // 
@@ -75,7 +75,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "PASSWORD :";
+            this.label4.Text = "HASŁO :";
             // 
             // nameTextBox
             // 
@@ -112,7 +112,7 @@
             this.changeHistoryButton.Name = "changeHistoryButton";
             this.changeHistoryButton.Size = new System.Drawing.Size(235, 38);
             this.changeHistoryButton.TabIndex = 2;
-            this.changeHistoryButton.Text = "CHANGE DISEASES HISTORY";
+            this.changeHistoryButton.Text = "HISTORIA CHORÓB";
             this.changeHistoryButton.UseVisualStyleBackColor = true;
             this.changeHistoryButton.Click += new System.EventHandler(this.changeHistoryButton_Click);
             // 
@@ -122,7 +122,7 @@
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(235, 38);
             this.saveButton.TabIndex = 2;
-            this.saveButton.Text = "SAVE CHANGES";
+            this.saveButton.Text = "ZAPISZ ZMIANY";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
@@ -132,7 +132,7 @@
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(235, 38);
             this.backButton.TabIndex = 2;
-            this.backButton.Text = "BACK";
+            this.backButton.Text = "WSTECZ";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "EditUsersProfileForm";
-            this.Text = "editUsersProfileForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.editUsersProfileForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

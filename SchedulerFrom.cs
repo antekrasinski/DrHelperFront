@@ -51,7 +51,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem showing schedule");
+                MessageBox.Show("Problem z wczytwaniem terminarza.");
                 return;
             }
             var appointmentsTimeblocksList = JsonConvert.DeserializeObject<List<Timeblock>>(strResponse);
@@ -88,7 +88,7 @@ namespace DrHelperFront
                     }
                     catch (Exception es)
                     {
-                        MessageBox.Show("Problem getting appointment.");
+                        MessageBox.Show("Problem z pobieraniem szczegółów.");
                         return;
                     }
                     var appointment = JsonConvert.DeserializeObject<Appointment>(strResponse);
@@ -102,7 +102,7 @@ namespace DrHelperFront
                     }
                     catch (Exception es)
                     {
-                        MessageBox.Show("Problem finding other user");
+                        MessageBox.Show("Problem z wczytywaniem szczegółów.");
                         return;
                     }
                     var appointmentTimeblocks = JsonConvert.DeserializeObject<List<Timeblock>>(strResponse);
@@ -123,7 +123,7 @@ namespace DrHelperFront
                     }
                     catch (Exception es)
                     {
-                        MessageBox.Show("Problem finding other user");
+                        MessageBox.Show("Problem z wczytywaniem szczegółów.");
                         return;
                     }
                     otherUser = JsonConvert.DeserializeObject<BasicUser>(strResponse);
@@ -203,7 +203,7 @@ namespace DrHelperFront
             }
             else
             {
-                MessageBox.Show("No timeblocks assigned to user.");
+                MessageBox.Show("Pusty terminarz.");
             }
         }
 

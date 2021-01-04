@@ -52,9 +52,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(84, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 20);
+            this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "DATE :";
+            this.label2.Text = "DATA :";
             // 
             // dateLabel
             // 
@@ -70,18 +70,18 @@
             this.otherUserLabel.AutoSize = true;
             this.otherUserLabel.Location = new System.Drawing.Point(84, 81);
             this.otherUserLabel.Name = "otherUserLabel";
-            this.otherUserLabel.Size = new System.Drawing.Size(71, 20);
+            this.otherUserLabel.Size = new System.Drawing.Size(74, 20);
             this.otherUserLabel.TabIndex = 0;
-            this.otherUserLabel.Text = "PATIENT :";
+            this.otherUserLabel.Text = "PACJENT :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(84, 110);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 20);
+            this.label5.Size = new System.Drawing.Size(44, 20);
             this.label5.TabIndex = 0;
-            this.label5.Text = "MEDICINE :";
+            this.label5.Text = "LEKI :";
             // 
             // medicineListBox
             // 
@@ -96,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 339);
+            this.ClientSize = new System.Drawing.Size(582, 343);
             this.Controls.Add(this.medicineListBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.otherUserLabel);
@@ -104,7 +104,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.otherUserLinkLabel);
             this.Name = "PrescriptionsDetailsForm";
-            this.Text = "PrescriptionsDetailsForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.PrescriptionsDetailsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

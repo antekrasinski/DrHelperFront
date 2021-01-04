@@ -42,7 +42,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem with logging into system.");
+                MessageBox.Show("Problem z logowaniem do systemu.");
                 return;
             }
 

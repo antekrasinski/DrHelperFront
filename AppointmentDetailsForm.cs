@@ -27,16 +27,16 @@ namespace DrHelperFront
         private void UserAppointmentDetailsForm_Load(object sender, EventArgs e)
         {
             dateLabel.Text = doctorTimeblock.startTime.Day + "/" + doctorTimeblock.startTime.Month + "/" + doctorTimeblock.startTime.Year;
-            timeLabel.Text = doctorTimeblock.startTime.TimeOfDay.ToString();
+            timeLabel.Text = doctorTimeblock.startTime.Hour.ToString() + ":" + doctorTimeblock.startTime.Minute.ToString() ;
 
             if (loggedUser.idUserType == 3)
             {
-                otherUserTypeLabel.Text = "DOCTOR: ";
+                otherUserTypeLabel.Text = "LEKARZ: ";
                 otherUserLinkLabel.Text = otherUser.name + " " + otherUser.surname;
             }
             else
             {
-                otherUserTypeLabel.Text = "PATIENT: ";
+                otherUserTypeLabel.Text = "PACJENT: ";
             }
 
             if (doctorTimeblock.avaliable)
@@ -47,7 +47,7 @@ namespace DrHelperFront
                 }
                 else
                 {
-                    signOrCancelButton.Text = "SCHEDULE AN APPOINTMENT";
+                    signOrCancelButton.Text = "ZAPISZ SIĘ NA WIZYTĘ";
                 }
             }
             else
@@ -57,14 +57,14 @@ namespace DrHelperFront
                 {
                     signOrCancelButton.Hide();
                 }
-                signOrCancelButton.Text = "CANCEL AN APPOINTMENT";
+                signOrCancelButton.Text = "ANULUJ WIZYTĘ";
             }
         }
 
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            if (signOrCancelButton.Text == "CANCEL AN APPOINTMENT")
+            if (signOrCancelButton.Text == "ANULUJ WIZYTĘ")
             {
                 //Delete appointment and timeblock for patient
                 //Delete appointment for doctor and change avaliability of doctors timeblock
@@ -78,7 +78,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with cancelation.");
+                    MessageBox.Show("Problem z anulowaniem wizyty.");
                     return;
                 }
 
@@ -101,7 +101,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with cancelation.");
+                    MessageBox.Show("Problem z anulowaniem wizyty.");
                     return;
                 }
 
@@ -113,12 +113,12 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with cancelation.");
+                    MessageBox.Show("Problem z anulowaniem wizyty.");
                     return;
                 }
                 doctorTimeblock = update;
                 patientTimeblock = new Timeblock();
-                MessageBox.Show("Succesful cancelation.");
+                MessageBox.Show("Pomyślna anulacja.");
                 this.Close();
 
             }
@@ -142,7 +142,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with creating appointment.");
+                    MessageBox.Show("Problem z tworzeniem wizyty.");
                     return;
                 }
                 var appointment = JsonConvert.DeserializeObject<Appointment>(strResponse);
@@ -166,7 +166,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with scheduling appointment.");
+                    MessageBox.Show("Problem z zapisem wizyty.");
                     return;
                 }
                 doctorTimeblock = timeblockUpdate;
@@ -190,11 +190,11 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with scheduling appointment.");
+                    MessageBox.Show("Problem z zapisem wizyty.");
                     return;
                 }
                 patientTimeblock = JsonConvert.DeserializeObject<Timeblock>(strResponse);
-                MessageBox.Show("Appointent scheduled.");
+                MessageBox.Show("Udany zapis.");
                 this.Close();
             }
         }

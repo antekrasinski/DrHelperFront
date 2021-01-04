@@ -33,7 +33,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem with getting medicine.");
+                MessageBox.Show("Problem z wczytywaniem leków.");
                 return;
             }
             List<Medicine> medicineList = JsonConvert.DeserializeObject<List<Medicine>>(strResponse);
@@ -48,7 +48,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem getting amount of medicine.");
+                    MessageBox.Show("Problem z pobieraniem leków.");
                     return;
                 }
                 var connection = JsonConvert.DeserializeObject<dynamic>(strResponse);
@@ -63,7 +63,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem with getting medicine.");
+                MessageBox.Show("Problem z pobieraniem leków.");
                 return;
             }
             var connectionsList = JsonConvert.DeserializeObject<List<UsersPrescriptions>>(strResponse);
@@ -86,18 +86,18 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem with getting medicine.");
+                    MessageBox.Show("Problem z pobieraniem leków.");
                     return;
                 }
                 otherUser = JsonConvert.DeserializeObject<BasicUser>(strResponse);
 
                 if (otherUser.idUserType == 2)
                 {
-                    otherUserLabel.Text = "DOCTOR :";
+                    otherUserLabel.Text = "LEKARZ :";
                 }
                 else
                 {
-                    otherUserLabel.Text = "PATIENT :";
+                    otherUserLabel.Text = "PACJENT :";
                 }
                 otherUserLinkLabel.Text = otherUser.name + " " + otherUser.surname;
                 DateTime date = DateTime.Parse(chosenPerscription.prescriptionDate);

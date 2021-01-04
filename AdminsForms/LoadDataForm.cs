@@ -33,7 +33,7 @@ namespace DrHelperFront.AdminsForms
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem with opening file.");
+                MessageBox.Show("Problem z otworzeniem pliku.");
                 return;
             }
             Rest rest = new Rest();
@@ -46,7 +46,7 @@ namespace DrHelperFront.AdminsForms
 
                 string json = JsonConvert.SerializeObject(newOne);
 
-                rest.endPoint = "http://localhost:5000/api/medicine";
+                rest.endPoint = "https://localhost:5001/api/medicine";
                 rest.httpMethod = httpVerb.POST;
                 rest.content = json;
                 try
@@ -55,7 +55,7 @@ namespace DrHelperFront.AdminsForms
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem adding medicine.");
+                    MessageBox.Show("Problem z wczytywaniem leków.");
                     return;
                 }
             }
@@ -70,7 +70,7 @@ namespace DrHelperFront.AdminsForms
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem with opening file.");
+                MessageBox.Show("Problem z otworzeniem pliku.");
                 return;
             }
 
@@ -94,7 +94,7 @@ namespace DrHelperFront.AdminsForms
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem adding disease.");
+                    MessageBox.Show("Problem z wczytywaniem chorób.");
                     return;
                 }
             }

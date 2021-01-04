@@ -55,7 +55,7 @@ namespace DrHelperFront.AdminsForms
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem deleting user.");
+                MessageBox.Show("Problem z usuwaniem użytkownika.");
                 return;
             }
             this.UsersSelectionForm_Load(sender, e);
@@ -105,7 +105,7 @@ namespace DrHelperFront.AdminsForms
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem getting list of doctors.");
+                MessageBox.Show("Problem z wczytywaniem lekarzy.");
                 return;
             }
             var allUsers = JsonConvert.DeserializeObject<List<BasicUser>>(strResponse);
@@ -136,11 +136,11 @@ namespace DrHelperFront.AdminsForms
             surnameLabel.Text = chosenUser.surname;
             if (chosenUser.idUserType == 2)
             {
-                descriptionLabel.Text = "DOCTOR " + chosenUser.description;
+                descriptionLabel.Text = "LEKARZ " + chosenUser.description;
             }
             else
             {
-                descriptionLabel.Text = "PATIENT";
+                descriptionLabel.Text = "PACJENT";
             }
         }
     }

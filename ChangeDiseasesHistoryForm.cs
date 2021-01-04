@@ -44,7 +44,7 @@ namespace DrHelperFront
             {
                 toSend.idUsersDiseases = chosenUsersDiseases.idUsersDiseases;
 
-                rest.endPoint = "http://localhost:5000/api/usersDiseases/" + chosenUsersDiseases.idUsersDiseases;
+                rest.endPoint = "https://localhost:5001/api/usersDiseases/" + chosenUsersDiseases.idUsersDiseases;
                 rest.httpMethod = httpVerb.PUT;
                 rest.content = json;
                 string strResponse = string.Empty;
@@ -54,7 +54,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem saving changes.");
+                    MessageBox.Show("Problem z zapisaniem zmian.");
                     return;
                 }
                 this.Close();
@@ -72,7 +72,7 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem connecting disease to user.");
+                    MessageBox.Show("Problem z dołączeniem chorób.");
                     return;
                 }
                 this.Close();
@@ -82,7 +82,7 @@ namespace DrHelperFront
         private void ChangeDiseasesHistory_Load(object sender, EventArgs e)
         {
             Rest rest = new Rest();
-            rest.endPoint = "http://localhost:5000/api/diseases";
+            rest.endPoint = "https://localhost:5001/api/diseases";
             rest.httpMethod = httpVerb.GET;
             string strResponse = string.Empty;
             try
@@ -91,7 +91,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem getting diseases.");
+                MessageBox.Show("Problem z wczytywaniem chorób.");
                 return;
             }
             allDiseases = JsonConvert.DeserializeObject<List<Disease>>(strResponse);

@@ -32,10 +32,10 @@
     <Compile Update="PrescriptionsDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsersForms\DoctorSelectionForm.cs">
+    <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LoginForm.cs">
+    <Compile Update="AppointmentDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RegisterForm.cs">
@@ -44,13 +44,10 @@
     <Compile Update="SchedulerFrom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="EditUsersProfileForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="AppointmentDetailsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="UsersForms\DoctorProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UsersForms\DoctorSelectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -38,46 +38,46 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 58);
+            this.label1.Location = new System.Drawing.Point(73, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(74, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PATH :";
+            this.label1.Text = "ŹRÓDŁO :";
             // 
             // pathTextBox
             // 
-            this.pathTextBox.Location = new System.Drawing.Point(163, 58);
+            this.pathTextBox.Location = new System.Drawing.Point(153, 48);
             this.pathTextBox.Name = "pathTextBox";
-            this.pathTextBox.Size = new System.Drawing.Size(516, 27);
+            this.pathTextBox.Size = new System.Drawing.Size(526, 27);
             this.pathTextBox.TabIndex = 1;
             // 
             // diseasesButton
             // 
-            this.diseasesButton.Location = new System.Drawing.Point(163, 100);
+            this.diseasesButton.Location = new System.Drawing.Point(75, 91);
             this.diseasesButton.Name = "diseasesButton";
-            this.diseasesButton.Size = new System.Drawing.Size(168, 41);
+            this.diseasesButton.Size = new System.Drawing.Size(198, 41);
             this.diseasesButton.TabIndex = 2;
-            this.diseasesButton.Text = "LOAD DISEASES";
+            this.diseasesButton.Text = "WCZYTAJ CHOROBY";
             this.diseasesButton.UseVisualStyleBackColor = true;
             this.diseasesButton.Click += new System.EventHandler(this.diseasesButton_Click);
             // 
             // medicineButton
             // 
-            this.medicineButton.Location = new System.Drawing.Point(337, 100);
+            this.medicineButton.Location = new System.Drawing.Point(279, 91);
             this.medicineButton.Name = "medicineButton";
-            this.medicineButton.Size = new System.Drawing.Size(168, 41);
+            this.medicineButton.Size = new System.Drawing.Size(198, 41);
             this.medicineButton.TabIndex = 2;
-            this.medicineButton.Text = "LOAD MEDICINE";
+            this.medicineButton.Text = "WCZYTAJ LEKI";
             this.medicineButton.UseVisualStyleBackColor = true;
             this.medicineButton.Click += new System.EventHandler(this.medicineButton_Click);
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(511, 100);
+            this.backButton.Location = new System.Drawing.Point(481, 91);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(168, 41);
+            this.backButton.Size = new System.Drawing.Size(198, 41);
             this.backButton.TabIndex = 2;
-            this.backButton.Text = "BACK";
+            this.backButton.Text = "WSTECZ";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
@@ -85,14 +85,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 204);
+            this.ClientSize = new System.Drawing.Size(751, 173);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.medicineButton);
             this.Controls.Add(this.diseasesButton);
             this.Controls.Add(this.pathTextBox);
             this.Controls.Add(this.label1);
             this.Name = "LoadDataForm";
-            this.Text = "LoadDataForm";
+            this.Text = "DrHelper";
             this.ResumeLayout(false);
             this.PerformLayout();
 

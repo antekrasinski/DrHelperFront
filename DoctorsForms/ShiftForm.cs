@@ -44,7 +44,7 @@ namespace DrHelperFront.DoctorsForms
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem with cancelation.");
+                MessageBox.Show("Problem tworzeniem zmiany.");
                 return;
             }
         }

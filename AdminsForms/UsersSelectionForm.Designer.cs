@@ -58,7 +58,7 @@
             this.dataButton.Name = "dataButton";
             this.dataButton.Size = new System.Drawing.Size(297, 40);
             this.dataButton.TabIndex = 2;
-            this.dataButton.Text = "LOAD DATA";
+            this.dataButton.Text = "WCZYTAJ DANE";
             this.dataButton.UseVisualStyleBackColor = true;
             this.dataButton.Click += new System.EventHandler(this.dataButton_Click);
             // 
@@ -68,7 +68,7 @@
             this.deleteProfileButton.Name = "deleteProfileButton";
             this.deleteProfileButton.Size = new System.Drawing.Size(297, 40);
             this.deleteProfileButton.TabIndex = 2;
-            this.deleteProfileButton.Text = "DELETE PROFILE";
+            this.deleteProfileButton.Text = "USUŃ PROFIL";
             this.deleteProfileButton.UseVisualStyleBackColor = true;
             this.deleteProfileButton.Click += new System.EventHandler(this.deleteProfileButton_Click);
             // 
@@ -78,7 +78,7 @@
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(297, 40);
             this.logoutButton.TabIndex = 2;
-            this.logoutButton.Text = "LOGOUT";
+            this.logoutButton.Text = "WYLOGUJ SIĘ";
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
@@ -88,14 +88,14 @@
             this.addProfileButton.Name = "addProfileButton";
             this.addProfileButton.Size = new System.Drawing.Size(297, 40);
             this.addProfileButton.TabIndex = 2;
-            this.addProfileButton.Text = "ADD DOCTORS PROFILE";
+            this.addProfileButton.Text = "DODAJ PROFIL LEKARZA";
             this.addProfileButton.UseVisualStyleBackColor = true;
             this.addProfileButton.Click += new System.EventHandler(this.addProfileButton_Click);
             // 
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(583, 128);
+            this.descriptionLabel.Location = new System.Drawing.Point(589, 125);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(0, 20);
             this.descriptionLabel.TabIndex = 1;
@@ -103,16 +103,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(470, 128);
+            this.label2.Location = new System.Drawing.Point(467, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "DESCRIPTION :";
+            this.label2.Text = "OPIS :";
             // 
             // surnameLabel
             // 
             this.surnameLabel.AutoSize = true;
-            this.surnameLabel.Location = new System.Drawing.Point(583, 95);
+            this.surnameLabel.Location = new System.Drawing.Point(589, 95);
             this.surnameLabel.Name = "surnameLabel";
             this.surnameLabel.Size = new System.Drawing.Size(0, 20);
             this.surnameLabel.TabIndex = 1;
@@ -120,16 +120,16 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(470, 95);
+            this.label4.Location = new System.Drawing.Point(467, 95);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
+            this.label4.Size = new System.Drawing.Size(91, 20);
             this.label4.TabIndex = 1;
-            this.label4.Text = "SURNAME :";
+            this.label4.Text = "NAZWISKO :";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(583, 65);
+            this.nameLabel.Location = new System.Drawing.Point(589, 65);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 20);
             this.nameLabel.TabIndex = 1;
@@ -137,11 +137,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(470, 65);
+            this.label6.Location = new System.Drawing.Point(467, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 20);
+            this.label6.Size = new System.Drawing.Size(45, 20);
             this.label6.TabIndex = 1;
-            this.label6.Text = "NAME :";
+            this.label6.Text = "IMIĘ :";
             // 
             // editButton
             // 
@@ -149,7 +149,7 @@
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(297, 40);
             this.editButton.TabIndex = 2;
-            this.editButton.Text = "EDIT PROFILE";
+            this.editButton.Text = "EDYTUJ SWÓJ PROFIL";
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
@@ -157,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 447);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.nameLabel);
@@ -171,7 +171,7 @@
             this.Controls.Add(this.dataButton);
             this.Controls.Add(this.usersListBox);
             this.Name = "UsersSelectionForm";
-            this.Text = "UsersSelectionForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.UsersSelectionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

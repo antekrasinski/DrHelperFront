@@ -41,50 +41,50 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(173, 57);
+            this.label1.Location = new System.Drawing.Point(57, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "NAME :";
+            this.label1.Text = "NAZWA :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(173, 88);
+            this.label2.Location = new System.Drawing.Point(57, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 20);
+            this.label2.Size = new System.Drawing.Size(170, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "OCCURANCE DATE :";
+            this.label2.Text = "DATA WYSTĘPOWANIA :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(173, 120);
+            this.label3.Location = new System.Drawing.Point(57, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 20);
+            this.label3.Size = new System.Drawing.Size(47, 20);
             this.label3.TabIndex = 0;
-            this.label3.Text = "DESCRIPTION :";
+            this.label3.Text = "OPIS :";
             // 
             // nameComboBox
             // 
             this.nameComboBox.FormattingEnabled = true;
-            this.nameComboBox.Location = new System.Drawing.Point(334, 57);
+            this.nameComboBox.Location = new System.Drawing.Point(233, 41);
             this.nameComboBox.Name = "nameComboBox";
             this.nameComboBox.Size = new System.Drawing.Size(281, 28);
             this.nameComboBox.TabIndex = 1;
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(334, 88);
+            this.dateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker.Location = new System.Drawing.Point(233, 76);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(281, 27);
             this.dateTimePicker.TabIndex = 2;
-            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker.CustomFormat = "dd/MM/yyyy";
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(334, 117);
+            this.descriptionTextBox.Location = new System.Drawing.Point(233, 109);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(281, 106);
@@ -92,29 +92,29 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(173, 237);
+            this.button1.Location = new System.Drawing.Point(60, 221);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 32);
+            this.button1.Size = new System.Drawing.Size(220, 41);
             this.button1.TabIndex = 4;
-            this.button1.Text = "SAVE CHANGES";
+            this.button1.Text = "ZAPISZ ZMIANY";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(398, 237);
+            this.button2.Location = new System.Drawing.Point(286, 221);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 32);
+            this.button2.Size = new System.Drawing.Size(228, 41);
             this.button2.TabIndex = 4;
-            this.button2.Text = "CANCEL";
+            this.button2.Text = "ANULUJ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // ChangeDiseasesHistory
+            // ChangeDiseasesHistoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(571, 299);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.descriptionTextBox);
@@ -123,8 +123,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "ChangeDiseasesHistory";
-            this.Text = "ChangeDiseasesHistory";
+            this.Name = "ChangeDiseasesHistoryForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.ChangeDiseasesHistory_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

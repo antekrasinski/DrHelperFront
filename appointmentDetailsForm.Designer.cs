@@ -45,9 +45,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(73, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 20);
+            this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DATE :";
+            this.label1.Text = "DATA :";
             // 
             // dateLabel
             // 
@@ -62,9 +62,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(73, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(82, 20);
             this.label3.TabIndex = 0;
-            this.label3.Text = "TIME :";
+            this.label3.Text = "GODZINA :";
             // 
             // timeLabel
             // 
@@ -77,16 +77,16 @@
             // otherUserTypeLabel
             // 
             this.otherUserTypeLabel.AutoSize = true;
-            this.otherUserTypeLabel.Location = new System.Drawing.Point(73, 106);
+            this.otherUserTypeLabel.Location = new System.Drawing.Point(73, 102);
             this.otherUserTypeLabel.Name = "otherUserTypeLabel";
-            this.otherUserTypeLabel.Size = new System.Drawing.Size(74, 20);
+            this.otherUserTypeLabel.Size = new System.Drawing.Size(68, 20);
             this.otherUserTypeLabel.TabIndex = 0;
-            this.otherUserTypeLabel.Text = "DOCTOR :";
+            this.otherUserTypeLabel.Text = "LEKARZ :";
             // 
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(192, 135);
+            this.descriptionLabel.Location = new System.Drawing.Point(192, 131);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(0, 20);
             this.descriptionLabel.TabIndex = 0;
@@ -94,16 +94,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(73, 135);
+            this.label8.Location = new System.Drawing.Point(73, 131);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 20);
+            this.label8.Size = new System.Drawing.Size(47, 20);
             this.label8.TabIndex = 0;
-            this.label8.Text = "DESCRIPTION :";
+            this.label8.Text = "OPIS :";
             // 
             // otherUserLinkLabel
             // 
             this.otherUserLinkLabel.AutoSize = true;
-            this.otherUserLinkLabel.Location = new System.Drawing.Point(192, 106);
+            this.otherUserLinkLabel.Location = new System.Drawing.Point(192, 102);
             this.otherUserLinkLabel.Name = "otherUserLinkLabel";
             this.otherUserLinkLabel.Size = new System.Drawing.Size(0, 20);
             this.otherUserLinkLabel.TabIndex = 1;
@@ -111,21 +111,21 @@
             // 
             // signOrCancelButton
             // 
-            this.signOrCancelButton.Location = new System.Drawing.Point(403, 44);
+            this.signOrCancelButton.Location = new System.Drawing.Point(382, 54);
             this.signOrCancelButton.Name = "signOrCancelButton";
-            this.signOrCancelButton.Size = new System.Drawing.Size(276, 51);
+            this.signOrCancelButton.Size = new System.Drawing.Size(276, 41);
             this.signOrCancelButton.TabIndex = 2;
-            this.signOrCancelButton.Text = "CANCEL APPOINTMENT";
+            this.signOrCancelButton.Text = "ANULUJ WIZYTĘ";
             this.signOrCancelButton.UseVisualStyleBackColor = true;
             this.signOrCancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(403, 101);
+            this.backButton.Location = new System.Drawing.Point(382, 101);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(276, 55);
+            this.backButton.Size = new System.Drawing.Size(276, 41);
             this.backButton.TabIndex = 2;
-            this.backButton.Text = "BACK";
+            this.backButton.Text = "WSTECZ";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
@@ -145,7 +145,7 @@
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.label1);
             this.Name = "appointmentDetailsForm";
-            this.Text = "UserAppointmentDetailsForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.UserAppointmentDetailsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

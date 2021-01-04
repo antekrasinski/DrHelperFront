@@ -72,7 +72,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem with getting perscriptions");
+                MessageBox.Show("Problem z pobraniem recept.");
                 return;
             }
             prescriptionList = JsonConvert.DeserializeObject<List<Prescription>>(strResponse);

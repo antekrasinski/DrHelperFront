@@ -25,7 +25,7 @@ namespace DrHelperFront
         private void CreatePerscription_Load(object sender, EventArgs e)
         {
             Rest rest = new Rest();
-            rest.endPoint = "http://localhost:5000/api/medicine";
+            rest.endPoint = "https://localhost:5001/api/medicine";
             rest.httpMethod = httpVerb.GET;
             string strResponse;
             try
@@ -34,12 +34,12 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem getting medicine.");
+                MessageBox.Show("Problem z wczytywaniem leków.");
                 return;
             }
             medicineList = JsonConvert.DeserializeObject<List<Medicine>>(strResponse);
 
-            rest.endPoint = "http://localhost:5000/api/users";
+            rest.endPoint = "https://localhost:5001/api/users";
             rest.httpMethod = httpVerb.GET;
             try
             {
@@ -47,7 +47,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem getting users.");
+                MessageBox.Show("Problem z wczytywaniem użytkowników.");
                 return;
             }
             var usersList = JsonConvert.DeserializeObject<List<BasicUser>>(strResponse);
@@ -76,8 +76,8 @@ namespace DrHelperFront
             }
             dataGridView.Columns.AddRange(medicineColumn);
             dataGridView.ColumnCount = 2;
-            dataGridView.Columns[0].HeaderText = "MEDICINE";
-            dataGridView.Columns[1].HeaderText = "AMOUNT";
+            dataGridView.Columns[0].HeaderText = "LEK";
+            dataGridView.Columns[1].HeaderText = "ILOŚĆ";
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -93,7 +93,7 @@ namespace DrHelperFront
             var json = JsonConvert.SerializeObject(newPerscription);
 
             Rest rest = new Rest();
-            rest.endPoint = "http://localhost:5000/api/perscriptions";
+            rest.endPoint = "https://localhost:5001/api/perscriptions";
             rest.httpMethod = httpVerb.POST;
             rest.content = json;
 
@@ -104,7 +104,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem creating perscription.");
+                MessageBox.Show("Problem z tworzeniem recepty.");
                 return;
             }
             newPerscription = JsonConvert.DeserializeObject<Prescription>(strResponse);
@@ -116,7 +116,7 @@ namespace DrHelperFront
 
             json = JsonConvert.SerializeObject(newUserConnection);
 
-            rest.endPoint = "http://localhost:5000/api/perscriptions/user";
+            rest.endPoint = "https://localhost:5001/api/perscriptions/user";
             rest.httpMethod = httpVerb.POST;
             rest.content = json;
 
@@ -126,7 +126,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem connecting user to perscription.");
+                MessageBox.Show("Problem z dołączeniem użytkownika.");
                 return;
             }
 
@@ -135,7 +135,7 @@ namespace DrHelperFront
 
             json = JsonConvert.SerializeObject(newUserConnection);
 
-            rest.endPoint = "http://localhost:5000/api/perscriptions/user";
+            rest.endPoint = "https://localhost:5001/api/perscriptions/user";
             rest.httpMethod = httpVerb.POST;
             rest.content = json;
 
@@ -145,7 +145,7 @@ namespace DrHelperFront
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem connecting user to perscription.");
+                MessageBox.Show("Problem z dołączeniem użytkownika.");
                 return;
             }
 
@@ -166,7 +166,7 @@ namespace DrHelperFront
 
                 json = JsonConvert.SerializeObject(newMedicineConnection);
 
-                rest.endPoint = "http://localhost:5000/api/perscriptions/medicine";
+                rest.endPoint = "https://localhost:5001/api/perscriptions/medicine";
                 rest.httpMethod = httpVerb.POST;
                 rest.content = json;
 
@@ -176,11 +176,11 @@ namespace DrHelperFront
                 }
                 catch (Exception es)
                 {
-                    MessageBox.Show("Problem connecting medicine to perscription.");
+                    MessageBox.Show("Problem z dołączeniem leków.");
                     return;
                 }
             }
-            MessageBox.Show("Succesfuly created prescription.");
+            MessageBox.Show("Pomyślnie stworzono receptę.");
             this.Close();
         }
     }

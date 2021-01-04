@@ -47,7 +47,7 @@
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(297, 40);
             this.deleteButton.TabIndex = 2;
-            this.deleteButton.Text = "DELETE DISEASE FROM HISTORY";
+            this.deleteButton.Text = "USUŃ CHOROBĘ Z HISTORII";
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
@@ -57,7 +57,7 @@
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(297, 40);
             this.backButton.TabIndex = 2;
-            this.backButton.Text = "BACK";
+            this.backButton.Text = "WSTECZ";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
@@ -67,14 +67,14 @@
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(297, 40);
             this.addButton.TabIndex = 2;
-            this.addButton.Text = "ADD DISEASE TO HISTORY";
+            this.addButton.Text = "DODAJ CHOROBĘ DO HISTORII";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addDiseaseToHistoryButton_Click);
             // 
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(611, 121);
+            this.descriptionLabel.Location = new System.Drawing.Point(556, 135);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(0, 20);
             this.descriptionLabel.TabIndex = 1;
@@ -82,25 +82,25 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(459, 121);
+            this.label2.Location = new System.Drawing.Point(470, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "DESCRIPTION :";
+            this.label2.Text = "OPIS :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(459, 92);
+            this.label4.Location = new System.Drawing.Point(470, 105);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 20);
+            this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 1;
-            this.label4.Text = "OCCURANCE DATE :";
+            this.label4.Text = "DATA :";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(611, 65);
+            this.nameLabel.Location = new System.Drawing.Point(556, 76);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 20);
             this.nameLabel.TabIndex = 1;
@@ -108,11 +108,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(459, 65);
+            this.label6.Location = new System.Drawing.Point(470, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 20);
+            this.label6.Size = new System.Drawing.Size(69, 20);
             this.label6.TabIndex = 1;
-            this.label6.Text = "NAME :";
+            this.label6.Text = "NAZWA :";
             // 
             // diseasesListBox
             // 
@@ -127,7 +127,7 @@
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
-            this.dateLabel.Location = new System.Drawing.Point(611, 92);
+            this.dateLabel.Location = new System.Drawing.Point(556, 105);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(0, 20);
             this.dateLabel.TabIndex = 1;
@@ -138,7 +138,7 @@
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(297, 40);
             this.editButton.TabIndex = 2;
-            this.editButton.Text = "EDIT DISEASE FROM HISTORY";
+            this.editButton.Text = "EDYTUJ CHOROBĘ Z HISTORII";
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
@@ -159,7 +159,7 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.deleteButton);
             this.Name = "DiseasesHistoryForm";
-            this.Text = "DiseasesHistoryForm";
+            this.Text = "DrHelper";
             this.Load += new System.EventHandler(this.DiseasesHistoryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
