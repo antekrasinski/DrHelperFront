@@ -40,7 +40,7 @@ namespace DrHelperFront
             {
                 strResponse = rest.makeRequest();
             }
-            catch (Exception es)
+            catch (Exception ex)
             {
                 MessageBox.Show("Problem z logowaniem do systemu.");
                 return;

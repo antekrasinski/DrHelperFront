@@ -91,6 +91,7 @@ namespace DrHelperFront.UsersForms
             update.surname = newOne.surname;
             update.idUserType = newOne.idUserType;
             loggedUser = update;
+            MessageBox.Show("Pomyślnie zapisano zmiany.");
         }
 
         private void editUsersProfileForm_Load(object sender, EventArgs e)

@@ -57,6 +57,7 @@ namespace DrHelperFront
                     MessageBox.Show("Problem z zapisaniem zmian.");
                     return;
                 }
+                MessageBox.Show("Pomyślnie zapisano zmiany.");
                 this.Close();
             }
             //POST
@@ -75,6 +76,7 @@ namespace DrHelperFront
                     MessageBox.Show("Problem z dołączeniem chorób.");
                     return;
                 }
+                MessageBox.Show("Pomyślnie zapisano zmiany.");
                 this.Close();
             }
         }

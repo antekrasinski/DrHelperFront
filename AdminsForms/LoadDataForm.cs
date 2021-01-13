@@ -59,6 +59,7 @@ namespace DrHelperFront.AdminsForms
                     return;
                 }
             }
+            MessageBox.Show("Pomyślnie wczytano dane.");
         }
 
         private void diseasesButton_Click(object sender, EventArgs e)
@@ -98,6 +99,8 @@ namespace DrHelperFront.AdminsForms
                     return;
                 }
             }
+
+            MessageBox.Show("Pomyślnie wczytano dane.");
 
         }
     }

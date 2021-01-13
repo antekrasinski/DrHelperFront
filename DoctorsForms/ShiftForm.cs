@@ -44,9 +44,11 @@ namespace DrHelperFront.DoctorsForms
             }
             catch (Exception es)
             {
-                MessageBox.Show("Problem tworzeniem zmiany.");
+                MessageBox.Show("Problem z tworzeniem zmiany.");
                 return;
             }
+
+            MessageBox.Show("Pomyślnie stworzono zmianę.");
         }
     }
 }

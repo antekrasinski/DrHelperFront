@@ -75,6 +75,10 @@ namespace DrHelperFront
                 descriptionLabel.Hide();
                 descriptionTextBox.Hide();
             }
+            else
+            {
+                register.Text = "STWÓRZ LEKARZA";
+            }
         }
     }
 }
